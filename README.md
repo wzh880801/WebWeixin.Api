@@ -19,8 +19,16 @@ SDK支持wx2.qq.com和wx.qq.com 2个域名，这2个域名分别对应IOS和Andr
 
 #Screenshots:
 
-![Demo Page](http://static.esobing.com/images/wx/wx.png)
+如果图片加载不全，可以点击连接查看：
+
+[【图片1】](http://static.esobing.com/images/wx/wx_1.png)
+
+![Demo Page](http://static.esobing.com/images/wx/wx_1.png)
+
+[【图片2】](http://static.esobing.com/images/wx/wx_2.png)
 
 ![Send Image Msg](http://static.esobing.com/images/wx/wx2.png)
+
+[【图片3】](http://static.esobing.com/images/wx/wx3.png)
 
 ![Image Msg](http://static.esobing.com/images/wx/wx3.png)

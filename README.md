@@ -39,3 +39,11 @@ SDK支持wx2.qq.com和wx.qq.com 2个域名，这2个域名分别对应IOS和Andr
     IWeixinClient client = new DefaultWeixinClient();
     var request = new Entity.***Request();
     var response = await client.ExecuteAsync(request);
+
+#Screenshots:
+
+![Demo Page](http://static.esobing.com/images/wx/wx.png)
+
+![Send Image Msg](http://static.esobing.com/images/wx/wx2.png)
+
+![Image Msg](http://static.esobing.com/images/wx/wx3.png)

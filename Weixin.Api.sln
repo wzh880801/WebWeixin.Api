@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weixin.Api", "Weixin.Api\Weixin.Api.csproj", "{87BB39A9-83A9-4DA3-B32B-95BAE49BADEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weixin.Api.FormTest", "Weixin.Api.FormTest\Weixin.Api.FormTest.csproj", "{0F4795C7-5B70-450D-A134-DEB323949ABD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87BB39A9-83A9-4DA3-B32B-95BAE49BADEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87BB39A9-83A9-4DA3-B32B-95BAE49BADEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87BB39A9-83A9-4DA3-B32B-95BAE49BADEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87BB39A9-83A9-4DA3-B32B-95BAE49BADEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F4795C7-5B70-450D-A134-DEB323949ABD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F4795C7-5B70-450D-A134-DEB323949ABD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F4795C7-5B70-450D-A134-DEB323949ABD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F4795C7-5B70-450D-A134-DEB323949ABD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{87BB39A9-83A9-4DA3-B32B-95BAE49BADEF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Weixin.Api</RootNamespace>
+    <AssemblyName>Weixin.Api</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DefaultWeixinClient.cs" />
+    <Compile Include="Common\ExDateTime.cs" />
+    <Compile Include="Common\Extensions.cs" />
+    <Compile Include="Common\RegexAttribute.cs" />
+    <Compile Include="Entity\BatchGetContactRequest.cs" />
+    <Compile Include="Entity\BatchGetContactResponse.cs" />
+    <Compile Include="Entity\DownloadImgRequest.cs" />
+    <Compile Include="Entity\DownloadImgResponse.cs" />
+    <Compile Include="Entity\GetContactRequest.cs" />
+    <Compile Include="Entity\GetContactResponse.cs" />
+    <Compile Include="Entity\GetMsgImgRequest.cs" />
+    <Compile Include="Entity\GetHeadImgRequest.cs" />
+    <Compile Include="Entity\GetMsgImgResponse.cs" />
+    <Compile Include="Entity\GetHeadImgResponse.cs" />
+    <Compile Include="Entity\GetIconRequest.cs" />
+    <Compile Include="Entity\GetIconResponse.cs" />
+    <Compile Include="Entity\VerifyUserRequest.cs" />
+    <Compile Include="Entity\VerifyUserResponse.cs" />
+    <Compile Include="Entity\ChangeRemarkNameRequest.cs" />
+    <Compile Include="Entity\ChangeRemarkNameResponse.cs" />
+    <Compile Include="Entity\WxStatusNotifyRequest.cs" />
+    <Compile Include="Entity\OpenWxStatusNotifyRequest.cs" />
+    <Compile Include="Entity\WxStatusNotifyResponse.cs" />
+    <Compile Include="Entity\OpenWxStatusNotifyResponse.cs" />
+    <Compile Include="Entity\SyncCheckRequest.cs" />
+    <Compile Include="Entity\SyncCheckResponse.cs" />
+    <Compile Include="Entity\UploadMediaRequest.cs" />
+    <Compile Include="Entity\UploadMediaResponse.cs" />
+    <Compile Include="Entity\WxBaseRequest.cs" />
+    <Compile Include="Entity\WxBaseResponse.cs" />
+    <Compile Include="Entity\GetQRCodeRequest.cs" />
+    <Compile Include="Entity\GetQRCodeResponse.cs" />
+    <Compile Include="Entity\GetQRImageRequest.cs" />
+    <Compile Include="Entity\GetQRImageResponse.cs" />
+    <Compile Include="Entity\LoginWxRequest.cs" />
+    <Compile Include="Entity\LoginWxResponse.cs" />
+    <Compile Include="Entity\ScanQRRequest.cs" />
+    <Compile Include="Entity\ScanQRResponse.cs" />
+    <Compile Include="Entity\PreLoginRequest.cs" />
+    <Compile Include="Entity\PreLoginResponse.cs" />
+    <Compile Include="Entity\WeixinRequest.cs" />
+    <Compile Include="Entity\WeixinResponse.cs" />
+    <Compile Include="Entity\WxInitRequest.cs" />
+    <Compile Include="Entity\WxInitResponse.cs" />
+    <Compile Include="Entity\WxSendAppMsgRequest.cs" />
+    <Compile Include="Entity\WxSendImgMsgRequest.cs" />
+    <Compile Include="Entity\WxSendAppMsgResponse.cs" />
+    <Compile Include="Entity\WxSendMsgRequest.cs" />
+    <Compile Include="Entity\WxSendImgMsgResponse.cs" />
+    <Compile Include="Entity\WxSendMsgResponse.cs" />
+    <Compile Include="Entity\WxSyncRequest.cs" />
+    <Compile Include="Entity\WxSyncResponse.cs" />
+    <Compile Include="Enum\ContentTypes.cs" />
+    <Compile Include="Enum\HttpMethods.cs" />
+    <Compile Include="Enum\ReponseType.cs" />
+    <Compile Include="Helper\FileHelper.cs" />
+    <Compile Include="Helper\ImageHelper.cs" />
+    <Compile Include="Helper\SerializationHelper.cs" />
+    <Compile Include="Helper\WebHelper.cs" />
+    <Compile Include="Interface\IWeixinClient.cs" />
+    <Compile Include="Interface\IWxService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\WebWxService.cs" />
+    <Compile Include="WxEntity\WxAddFriendMsg.cs" />
+    <Compile Include="WxEntity\WxAddMsg.cs" />
+    <Compile Include="WxEntity\WxAppInfo.cs" />
+    <Compile Include="WxEntity\WxAppMsgContent.cs" />
+    <Compile Include="WxEntity\WxBuff.cs" />
+    <Compile Include="WxEntity\WxDelContact.cs" />
+    <Compile Include="WxEntity\WxContact.cs" />
+    <Compile Include="WxEntity\WxAppMsg.cs" />
+    <Compile Include="WxEntity\WxImgMsg.cs" />
+    <Compile Include="WxEntity\WxImgMsgContent.cs" />
+    <Compile Include="WxEntity\WxList.cs" />
+    <Compile Include="WxEntity\WxMember.cs" />
+    <Compile Include="WxEntity\WxMpArticle.cs" />
+    <Compile Include="WxEntity\WxMpSubscribeMsg.cs" />
+    <Compile Include="WxEntity\WxMsg.cs" />
+    <Compile Include="WxEntity\WxProfile.cs" />
+    <Compile Include="WxEntity\WxRecommendInfo.cs" />
+    <Compile Include="WxEntity\WxSyncKey.cs" />
+    <Compile Include="WxEntity\WxUser.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

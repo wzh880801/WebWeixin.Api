@@ -176,10 +176,10 @@ namespace Weixin.Api.FormTest
                 {
                     SetText("群组信息\tUserName:{0}\tAlias:{1}\tDisplayName:{2}\tNickName:{3}\tRemarkName:{4}", c.UserName, c.Alias, c.DisplayName, c.NickName, c.RemarkName);
                 }
-
-                this.button2.Enabled = true;
-                this.button3.Enabled = true;
             }
+
+            this.button2.Enabled = true;
+            this.button3.Enabled = true;
         }
 
         private void SetText(string text)
